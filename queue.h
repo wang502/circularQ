@@ -1,12 +1,14 @@
 #ifndef QUEUE.H
 #define QUEUE.H
 
+#inlcude <vector>
+
 using namespace std;
 
 class queue{
   int MAX_SIZE;
-  int front;
-  int rear;
+  int head;
+  int tail;
   vector<int> elements;
 
   public:
@@ -14,6 +16,6 @@ class queue{
 
     bool enqueue(int ele);
 
-    int dequeue(int ele);
+    int dequeue();
 }
 #endif
