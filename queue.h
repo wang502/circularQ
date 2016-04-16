@@ -1,10 +1,9 @@
-#ifndef QUEUE.H
-#define QUEUE.H
+#ifndef QUEUE_H
+#define QUEUE_H
 
-#inlcude <vector>
+#include <vector>
 
 using namespace std;
-
 class queue{
   int MAX_SIZE;
   int head;
@@ -17,5 +16,10 @@ class queue{
     bool enqueue(int ele);
 
     int dequeue();
-}
+
+    int get_head();
+
+    int get_tail();
+};
+
 #endif
