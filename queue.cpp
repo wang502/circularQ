@@ -4,6 +4,7 @@
 
 using namespace std;
 
+// constructor
 queue::queue(int size) : elements(size),MAX_SIZE(size),head(0),tail(-1){}
 
 bool queue::enqueue(int ele){
@@ -75,4 +76,7 @@ int main(){
   cout<<"head: "<<q.get_head()<<endl;
   cout<<"tail: "<<q.get_tail()<<endl;
   cout<<q.dequeue()<<endl;
+  q.dequeue();
+  cout<<"head: "<<q.get_head()<<endl;
+  cout<<"tail: "<<q.get_tail()<<endl;
 }
