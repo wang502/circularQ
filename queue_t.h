@@ -1,18 +1,19 @@
 #ifndef QUEUE_T_H
 #define QUEUE_T_H
 #include <vector>
-Template<T>
+
+template<class T>
 class queue_t{
   int MAX_SIZE;
   int head;
   int tail;
-  vector<T> elements;
+  std::vector<T> elements;
   public:
     queue_t(int size);
 
     bool enqueue(T ele);
 
-    int dequeue();
+    T dequeue();
 
     int get_head();
 
