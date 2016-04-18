@@ -8,7 +8,7 @@ class queue_t{
   int tail;
   vector<T> elements;
   public:
-    queue(int size);
+    queue_t(int size);
 
     bool enqueue(T ele);
 
