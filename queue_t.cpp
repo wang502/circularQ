@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <cstring>
+#include <stdio.h>
 #include "queue_t.h"
 
 using namespace std;
@@ -90,4 +91,5 @@ int main(){
   q2.enqueue("two");
   cout<<"first: "<<q2.dequeue()<<endl;
   cout<<"second: "<<q2.dequeue()<<endl;
+  putchar(getchar());
 }
